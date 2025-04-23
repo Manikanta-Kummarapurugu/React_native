@@ -9,6 +9,9 @@ import Buttons from './src/buttons';
 import dropDown from './src/dropDown';
 import cameraScreen from './src/cameraScreen';
 import permissions from './src/services/permissions';
+import ScanQRPage from './src/Scanner';
+import { CountdownCircleTimer } from 'react-native-countdown-circle-timer';
+import countdownCircleTimer from './src/services/Countdown';
 
 // Create the Drawer Navigator
 const Drawer = createDrawerNavigator();
@@ -39,6 +42,16 @@ const AppDrawer: React.FC = () => (
       }}
     />
     <Drawer.Screen name="permissionspage" component={permissions}
+      options={{
+        title: 'React Native', 
+      }}
+    />
+    <Drawer.Screen name="scanner" component={ScanQRPage}
+      options={{
+        title: 'React Native', 
+      }}
+    />
+     <Drawer.Screen name="countdown" component={countdownCircleTimer}
       options={{
         title: 'React Native', 
       }}

@@ -98,6 +98,12 @@ const LeftMenu: React.FC<DrawerContentComponentProps> = ({ navigation }) => {
           <TouchableOpacity style={styles.menuItem} onPress={() => navigation.navigate('permissionspage')}>
             <Text style={styles.menuItemText}>Permissions</Text>
           </TouchableOpacity>
+          <TouchableOpacity style={styles.menuItem} onPress={() => navigation.navigate('scanner')}>
+            <Text style={styles.menuItemText}>Scanner</Text>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.menuItem} onPress={() => navigation.navigate('countdown')}>
+            <Text style={styles.menuItemText}>countdown</Text>
+          </TouchableOpacity>
           <TouchableOpacity style={styles.menuItem} onPress={onShare}>
             <Text style={styles.menuItemText}>Share App</Text>
           </TouchableOpacity>
